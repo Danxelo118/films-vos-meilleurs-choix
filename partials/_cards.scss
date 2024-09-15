@@ -1,5 +1,5 @@
 @use 'variables';
-/*@use 'partials/mixins/text';*/
+@use 'partials/mixins/text';
 
 
 
@@ -32,7 +32,7 @@
       background-color: lighten(variables.$primary, 15%);
       border: none;
       color: complement(variables.$primary);
-    /* @include text.small-cap;*/
+     @include text.small-cap;
   
       &:hover {
         background-color: lighten(variables.$primary, 25%);

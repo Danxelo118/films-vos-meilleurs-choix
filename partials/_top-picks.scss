@@ -4,6 +4,8 @@
 .top-picks { 
   position: relative;
   padding: 50px; 
+  background-color: lighten(variables.$primary, 5%);
+
 
 
   &__header {

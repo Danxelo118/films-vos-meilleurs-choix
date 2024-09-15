@@ -1,10 +1,12 @@
 .top-picks {
   position: relative;
   padding: 50px;
+  background-color: #73BA9B;
 }
 .top-picks__header {
   border-left: solid 5px #73BA9B;
   padding-left: 20px;
+  color: white;
 }
 .top-picks__title {
   margin: 0;
@@ -16,4 +18,35 @@
 .top-picks__wrapper {
   display: flex;
   margin: 0 -5px;
+}
+
+.card {
+  background-color: #73BA9B;
+  padding: 5px;
+  margin: 5px;
+}
+.card__media {
+  position: relative;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+}
+.card__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.card__btn {
+  width: 100%;
+  padding: 5px;
+  background-color: #a6d3c0;
+  border: none;
+  color: #ba7392;
+}
+.card__btn:hover {
+  background-color: #c8e4d8;
 }/*# sourceMappingURL=style.css.map */
