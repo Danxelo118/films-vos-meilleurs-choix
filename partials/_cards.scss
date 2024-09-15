@@ -1,0 +1,41 @@
+@use 'variables';
+/*@use 'partials/mixins/text';*/
+
+
+
+.card {
+    background-color: variables.$primary;
+    padding: 5px;
+    margin: 5px;
+  
+    &__media {
+      position: relative;
+    }
+  
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+  
+    &__mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+    &__btn {
+      width: 100%;
+      padding: 5px;
+      background-color: lighten(variables.$primary, 15%);
+      border: none;
+      color: complement(variables.$primary);
+    /* @include text.small-cap;*/
+  
+      &:hover {
+        background-color: lighten(variables.$primary, 25%);
+      }
+    }
+}
